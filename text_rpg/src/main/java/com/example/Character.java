@@ -6,6 +6,7 @@ public abstract class Character {
     private String name;
     private int health;
     private String sex;
+    private int strength;
 
     //Get and Set
 
@@ -23,6 +24,22 @@ public abstract class Character {
         return this.name;
     }
 
+    public void setSex(String sex){
+        this.sex = sex;
+    }
+
+    public String getSex(){
+        return this.sex; 
+    }
+
+    public void setStrength(int strength){
+        this.strength = strength;
+    }
+
+    public int getStrength(){
+        return this.strength; 
+    }
+
 
     //Methods
     public abstract void talk();
@@ -32,6 +49,8 @@ public abstract class Character {
     public abstract void sleep();
 
     public abstract void eat();
+
+    public abstract void attack();
 
 }
 
