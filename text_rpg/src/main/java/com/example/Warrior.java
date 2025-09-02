@@ -1,19 +1,17 @@
 package com.example;
 
 public class Warrior extends Character {
+
     
     //Contructor
-    public Warrior(String name, int age, String sex){
+    public Warrior(String name){
         this.setName(name);
-        this.setSex(sex);
-        this.setStrength(80);
-
+        this.setStrength(90);
     }
-
 
     @Override
     public void talk() {
-        System.out.println(this.getName() + " dice: Hola!");
+        System.out.println(this.getName() + " dice: Arrgh!");
     }
 
     @Override
@@ -23,12 +21,12 @@ public class Warrior extends Character {
 
     @Override
     public void sleep() {
-        System.out.println( this.getName() + " está durmiendo.");
+        System.out.println( this.getName() + " duerme.");
     }
 
     @Override
     public void eat() {
-        System.out.println(this.getName() + " está comiendo.");
+        System.out.println(this.getName() + " come.");
     }
 
     @Override

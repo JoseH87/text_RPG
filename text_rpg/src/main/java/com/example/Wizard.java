@@ -2,13 +2,11 @@ package com.example;
 
 public class Wizard extends Character {
 
-    int strength = 30;
-    int magic = 90;
-    int speed = 50;
 
     //Contructor
     public Wizard(String name){
         this.setName(name);
+        this.setMagic(90);
     }
 
     @Override
