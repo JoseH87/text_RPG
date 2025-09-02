@@ -30,7 +30,8 @@ public class Warrior extends Character {
     }
 
     @Override
-    public void attack() {
-        System.out.println(this.getName() + " ataca con fuerza " + this.getStrength() + ".");
+    public void attack(Enemy enemy) {
+        System.out.println(this.getName() + " ataca con fuerza " + this.getStrength() + " a " + enemy.getName() + ".");
+        enemy.takeDamage(this.getStrength());
     }
 }

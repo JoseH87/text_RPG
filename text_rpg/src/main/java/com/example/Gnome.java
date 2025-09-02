@@ -2,8 +2,6 @@ package com.example;
 
 public class Gnome extends Character {
 
-
-
 //Contructor
 public Gnome(String name){
         this.setName(name);
@@ -32,9 +30,10 @@ public Gnome(String name){
         setHealth(getHealth() + 10);
     }
 
-    @Override
-    public void attack() {
-        System.out.println(this.getName() + " lanza una piedra con fuerza " + this.getStrength() + ".");
+     @Override
+    public void attack(Enemy enemy) {
+        System.out.println(this.getName() + " ataca con fuerza " + this.getStrength() + " a " + enemy.getName() + ".");
+        enemy.takeDamage(this.getStrength());
     }
     
 }

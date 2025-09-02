@@ -1,20 +1,19 @@
 package com.example;
 
-public abstract class Character {
-
+public abstract class Enemy {
     //Atributtes
     private String name;
-    private int health = 100;
-    private int strength = 40;
-    private int speed = 40;
-    private int magic = 0;
+    private int health;
+    private int strength;
+    private int speed;
+    private int magic;
 
     //Get and Set
 
     public void setName(String name){
         this.name = name;
     }
-    public String getName(){
+    public  String getName(){
         return this.name;
     }
 
@@ -51,15 +50,7 @@ public abstract class Character {
 
 
     //Methods
-    public abstract void talk();
-
-    public abstract void walk();
-
-    public abstract void sleep();
-
-    public abstract void eat();
-
-    public abstract void attack(Enemy enemy);
+    public abstract void attack(Character character);
 
     public void takeDamage(int damage) {
         this.health -= damage;
@@ -68,12 +59,8 @@ public abstract class Character {
         }
         System.out.println(this.name + " recibe " + damage + " puntos de daño. Salud restante: " + this.health);
     }
-    public void showHealth() {
-        System.out.println(this.getName() + " tiene " + this.getHealth() + " puntos de vida.");
-    }
 
     public boolean isAlive() {
         return this.health > 0;
     }
 }
-

@@ -30,7 +30,8 @@ public class Wizard extends Character {
     }
 
     @Override
-    public void attack() {
-        System.out.println(this.getName() + " lanza un rayo mágico " + this.getStrength() + ".");
+    public void attack(Enemy enemy) {
+        System.out.println(this.getName() + " lanza un rayo magico de nivel " + this.getMagic() + " a " + enemy.getName() + ".");
+        enemy.takeDamage(this.getMagic());
     }
 }
