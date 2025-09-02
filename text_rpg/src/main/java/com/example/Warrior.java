@@ -1,32 +1,34 @@
 package com.example;
 
-public class Dark_Elf extends Character {
+public class Warrior extends Character {
+    
     //Contructor
-    public Dark_Elf(String name, int age, String sex){
+    public Warrior(String name, int age, String sex){
         this.setName(name);
         this.setSex(sex);
-        this.setStrength(70);
+        this.setStrength(80);
 
     }
 
+
     @Override
     public void talk() {
-        System.out.println( this.getName() + " dice: Hola!");
+        System.out.println(this.getName() + " dice: Hola!");
     }
 
     @Override
     public void walk() {
-        System.out.println( this.getName() + " camina");
+        System.out.println(this.getName() + " camina.");
     }
 
     @Override
     public void sleep() {
-        System.out.println(this.getName() + " duerme");
+        System.out.println( this.getName() + " está durmiendo.");
     }
 
     @Override
     public void eat() {
-        System.out.println(this.getName() + " come");
+        System.out.println(this.getName() + " está comiendo.");
     }
 
     @Override

@@ -5,9 +5,9 @@ public abstract class Character {
     //Atributtes
     private String name;
     private int health = 100;
-    private int age;
-    private String sex;
-    private int strength;
+    private int strength = 0;
+    private int speed = 0;
+    private int magic = 0;
 
     //Get and Set
 
@@ -25,12 +25,12 @@ public abstract class Character {
         return this.health;
     }
 
-    public void setSex(String sex){
-        this.sex = sex;
+    public void setMagic(int magic){
+        this.magic = magic;
     }
 
-    public String getSex(){
-        return this.sex; 
+    public int  getMagic(){
+        return this.magic; 
     }
 
     public void setStrength(int strength){
@@ -39,6 +39,14 @@ public abstract class Character {
 
     public int getStrength(){
         return this.strength; 
+    }
+
+    public void setSpeed(int speed){
+        this.speed= speed;
+    }
+
+    public int getSpeed(){
+        return speed;
     }
 
 
