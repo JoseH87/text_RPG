@@ -5,34 +5,34 @@ public class Human extends Character {
     //Contructor
     public Human(String name, int age, String sex){
         this.setName(name);
-        this.setHealth(100);
         this.setSex(sex);
         this.setStrength(80);
 
     }
 
+
     @Override
     public void talk() {
-        System.out.println("Human " + this.getName() + " says: Hello!");
+        System.out.println(this.getName() + " dice: Hola!");
     }
 
     @Override
     public void walk() {
-        System.out.println("Human " + this.getName() + " is walking on two legs.");
+        System.out.println(this.getName() + " camina.");
     }
 
     @Override
     public void sleep() {
-        System.out.println("Human " + this.getName() + " is sleeping.");
+        System.out.println( this.getName() + " está durmiendo.");
     }
 
     @Override
     public void eat() {
-        System.out.println("Human " + this.getName() + " is eating.");
+        System.out.println(this.getName() + " está comiendo.");
     }
 
     @Override
     public void attack() {
-        System.out.println("Human " + this.getName() + " attacks with strength " + this.getStrength() + ".");
+        System.out.println(this.getName() + " ataca con fuerza " + this.getStrength() + ".");
     }
 }

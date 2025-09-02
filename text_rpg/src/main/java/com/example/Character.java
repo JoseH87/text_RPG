@@ -4,7 +4,8 @@ public abstract class Character {
 
     //Atributtes
     private String name;
-    private int health;
+    private int health = 100;
+    private int age;
     private String sex;
     private int strength;
 
@@ -20,8 +21,8 @@ public abstract class Character {
     public void setHealth(int health){
         this.health = health;
     }
-    public String getHealth(){
-        return this.name;
+    public int getHealth(){
+        return this.health;
     }
 
     public void setSex(String sex){
